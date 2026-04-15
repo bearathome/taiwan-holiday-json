@@ -1,0 +1,78 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "台灣國定假日資料",
+  "home_page_url": "https://github.com/bearathome/taiwan-holiday-json",
+  "feed_url": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/feed.json",
+  "items": [
+    {
+      "id": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2026.json",
+      "title": "2026 台灣國定假日資料",
+      "url": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2026.json",
+      "content_text": "資料來源: 115年中華民國政府行政機關辦公日曆表.csv",
+      "date_modified": "2026-04-15T10:53:45.633Z"
+    },
+    {
+      "id": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2025.json",
+      "title": "2025 台灣國定假日資料",
+      "url": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2025.json",
+      "content_text": "資料來源: 114年中華民國政府行政機關辦公日曆表(1141020更新).csv",
+      "date_modified": "2026-04-15T10:53:45.581Z"
+    },
+    {
+      "id": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2024.json",
+      "title": "2024 台灣國定假日資料",
+      "url": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2024.json",
+      "content_text": "資料來源: 113年中華民國政府行政機關辦公日曆表.csv",
+      "date_modified": "2026-04-15T10:53:45.532Z"
+    },
+    {
+      "id": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2023.json",
+      "title": "2023 台灣國定假日資料",
+      "url": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2023.json",
+      "content_text": "資料來源: 112年中華民國政府行政機關辦公日曆表.csv",
+      "date_modified": "2026-04-15T10:53:45.465Z"
+    },
+    {
+      "id": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2022.json",
+      "title": "2022 台灣國定假日資料",
+      "url": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2022.json",
+      "content_text": "資料來源: 111年中華民國政府行政機關辦公日曆表.csv",
+      "date_modified": "2026-04-15T10:53:45.415Z"
+    },
+    {
+      "id": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2021.json",
+      "title": "2021 台灣國定假日資料",
+      "url": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2021.json",
+      "content_text": "資料來源: 110中華民國政府行政機關辦公日曆表.csv",
+      "date_modified": "2026-04-15T10:53:45.366Z"
+    },
+    {
+      "id": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2020.json",
+      "title": "2020 台灣國定假日資料",
+      "url": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2020.json",
+      "content_text": "資料來源: 109年中華民國政府行政機關辦公日曆表.csv",
+      "date_modified": "2026-04-15T10:53:45.314Z"
+    },
+    {
+      "id": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2019.json",
+      "title": "2019 台灣國定假日資料",
+      "url": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2019.json",
+      "content_text": "資料來源: 108年中華民國政府行政機關辦公日曆表.csv",
+      "date_modified": "2026-04-15T10:53:45.263Z"
+    },
+    {
+      "id": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2018.json",
+      "title": "2018 台灣國定假日資料",
+      "url": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2018.json",
+      "content_text": "資料來源: 107政府機關辦公日曆表(數字版).csv",
+      "date_modified": "2026-04-15T10:53:45.155Z"
+    },
+    {
+      "id": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2017.json",
+      "title": "2017 台灣國定假日資料",
+      "url": "https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2017.json",
+      "content_text": "資料來源: 106年政府機關辦公日曆表.csv",
+      "date_modified": "2026-04-15T10:53:45.104Z"
+    }
+  ]
+}
