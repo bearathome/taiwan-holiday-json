@@ -35,13 +35,14 @@ jobs:
       - name: Copy results to main
         run: |
           cp sync/result/*.json main/
+          cp sync/result/feed.* main/
 
       - name: Commit and push to main
         working-directory: main
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add *.json
+          git add *.json feed.*
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
