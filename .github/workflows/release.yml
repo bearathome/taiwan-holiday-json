@@ -1,0 +1,32 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Update latest tag
+        run: |
+          git tag -f latest
+          git push -f origin latest
+
+      - name: Create date release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="$(date -u +%Y-%m-%d)"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            TAG="${TAG}-$(date -u +%H%M%S)"
+          fi
+          gh release create "$TAG" \
+            --title "$TAG" \
+            --notes "Auto-released on ${TAG}"
