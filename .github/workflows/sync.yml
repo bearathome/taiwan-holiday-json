@@ -8,6 +8,8 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout sync branch
         uses: actions/checkout@v4
@@ -38,6 +40,7 @@ jobs:
           cp sync/result/feed.* main/
 
       - name: Commit and push to main
+        id: commit
         working-directory: main
         run: |
           git config user.name "github-actions[bot]"
@@ -45,7 +48,30 @@ jobs:
           git add *.json feed.*
           if git diff --cached --quiet; then
             echo "No changes to commit"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Update holiday data $(date -u +%Y-%m-%d)"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Update latest tag
+        if: steps.commit.outputs.changed == 'true'
+        working-directory: main
+        run: |
+          git tag -f latest
+          git push -f origin latest
+
+      - name: Create release
+        if: steps.commit.outputs.changed == 'true'
+        working-directory: main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="$(date -u +%Y-%m-%d)"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            TAG="${TAG}-$(date -u +%H%M%S)"
+          fi
+          gh release create "$TAG" \
+            --title "$TAG" \
+            --notes "Auto-released on ${TAG}"
