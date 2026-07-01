@@ -4,7 +4,14 @@
     <title>台灣國定假日資料</title>
     <link>https://github.com/bearathome/taiwan-holiday-json</link>
     <description>台灣每年國定假日 JSON 資料更新</description>
-    <lastBuildDate>Tue, 30 Jun 2026 03:42:10 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 03:58:28 GMT</lastBuildDate>
+    <item>
+      <title>2027 台灣國定假日資料</title>
+      <link>https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2027.json</link>
+      <guid>https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2027.json</guid>
+      <description>資料來源: 116年中華民國政府行政機關辦公日曆表.csv</description>
+      <pubDate>Wed, 01 Jul 2026 03:58:28 GMT</pubDate>
+    </item>
     <item>
       <title>2026 台灣國定假日資料</title>
       <link>https://cdn.jsdelivr.net/gh/bearathome/taiwan-holiday-json@latest/2026.json</link>
